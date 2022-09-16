@@ -265,7 +265,7 @@ export default {
     sendMail()
     {
       alert('ok');
-      ValidateUser.sendmail(
+      ValidateUser.sendMail(
         res=>{
           console.log('send mail response is', res);
         },

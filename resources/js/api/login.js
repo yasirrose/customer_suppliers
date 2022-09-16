@@ -39,7 +39,7 @@ const login = {
             })
     },
     sendMail(cb, errorCB) {
-        axios.get(window.API_URL + 'test').then(resp => {
+        axios.get(window.API_URL + 'sendMail').then(resp => {
                 if (resp.status == 200) {
                     cb(resp.data)
                 }
