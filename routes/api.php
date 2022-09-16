@@ -66,6 +66,13 @@ Route::group(['prefix' => 'admin',  'middleware' => 'token'], function(){
     });
     
     Route::get('getAllRoles', [API\AdminController::class, 'getAllRoles']);
+    Route::get('/test', function(){
+        $user = ['name' => 'Allen Turing', 'info'=> 'Verification email'];
+        \Mail::to('developer.techleadz@gmail.com')->send(new \App\Mail\NewMail($user));
+    
+        dd("success");
+    
+    });
 
 Route::group(['prefix' => 'client',  'middleware' => 'token'], function(){
     

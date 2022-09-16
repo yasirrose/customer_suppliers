@@ -127,6 +127,16 @@
             >
               Sign in
             </b-button>
+            <b-button
+              variant="primary"
+              type="submit"
+              block
+              :disabled="invalid"
+               @click="sendMail"
+            >
+              Send Mail
+            </b-button>
+            
           </b-form>
         </validation-observer>
 
@@ -251,6 +261,18 @@ export default {
     myFunction(e)
     {
        console.log('the userLevel var is',this.userLevel);
+    },
+    sendMail()
+    {
+      alert('ok');
+      ValidateUser.sendmail(
+        res=>{
+          console.log('send mail response is', res);
+        },
+        err=>{
+          console.log(err);
+        }
+      );
     },
     getAllUserLevels() {
       ValidateUser.getData(

@@ -38,6 +38,16 @@ const login = {
                 errorCB(err.response.data)
             })
     },
+    sendMail(cb, errorCB) {
+        axios.get(window.API_URL + 'test').then(resp => {
+                if (resp.status == 200) {
+                    cb(resp.data)
+                }
+            })
+            .catch(err => {
+                errorCB(err.response.data)
+            })
+    }
     // all(cb, errorCB) {
     //     axios
     //         .get(API_URL + 'me')
