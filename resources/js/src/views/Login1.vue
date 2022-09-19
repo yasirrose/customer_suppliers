@@ -127,7 +127,7 @@
             >
               Sign in
             </b-button>
-            <b-button
+            <!-- <b-button
               variant="primary"
               type="submit"
               block
@@ -135,7 +135,7 @@
                @click="sendMail"
             >
               Send Mail
-            </b-button>
+            </b-button> -->
             
           </b-form>
         </validation-observer>

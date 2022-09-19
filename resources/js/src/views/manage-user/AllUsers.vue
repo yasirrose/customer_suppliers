@@ -5,7 +5,7 @@
         <!-- <b-link :to="{ path: 'create-user' }" class="custom-btn">Create a New User</b-link>
         <b-link :to="{ path: 'create-user' }" class="custom-btn">Start User Import Wizard</b-link>
         <b-button class="custom-btn" v-b-toggle.sidebar-border>View Summary</b-button> -->
-        <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
+        <!-- <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
           Delete {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
         </b-button>
@@ -16,7 +16,7 @@
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('disable')">
           Dieable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
-        </b-button>
+        </b-button> -->
         <b-sidebar id="sidebar-border" sidebar-class="border-right border-primary">
           <div class="px-3 py-2">
             <div class="mt-md-0 mt-2">
@@ -425,4 +425,5 @@ export default {
 .custom-danger-btn:focus {
   background-color: #ee4b4b !important;
 }
+
 </style>

@@ -5,10 +5,10 @@
         <!-- <b-link :to="{ path: 'create-user' }" class="custom-btn">Create a New User</b-link>
         <b-link :to="{ path: 'create-user' }" class="custom-btn">Start User Import Wizard</b-link>
         <b-button class="custom-btn" v-b-toggle.sidebar-border>View Summary</b-button> -->
-        <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
+        <!-- <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
           Delete {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
-        </b-button>
+        </b-button> -->
         <!-- <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
           Enable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
